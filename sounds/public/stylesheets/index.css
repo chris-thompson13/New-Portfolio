@@ -1,3 +1,127 @@
 * {
-  box-sizing: border-box;
+  margin: 0;
+padding: 0;
+font-family: sans-serif;
+  }
+button:focus {outline:0;}
+.spacer{
+  padding-top: 100px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+}
+button:hover{
+  color: #ff3363;
+  font-size: 20px;
+}
+
+body{
+background-image: url("https://static.pexels.com/photos/14676/pexels-photo-14676.png");
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+}
+
+nav{
+  background-color: white;
+  height: 60px;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+}
+button{
+  z-index: 40;
+  display: inline-block;
+  top:20px;
+  vertical-align: middle;
+  background-color: white;
+  width: 100px;
+  height: 30px;
+  background-color: white;
+  border-radius: 10px;
+  border-color: #33b8ff;
+  border-width: 1px;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #33b8ff;
+  border-style: solid;
+  transition: color 1s;
+}
+.right{
+  float: right;
+  padding: 12px;
+
+}
+
+.left{
+  float: left;
+  padding: 12px;
+
+}
+.cont{
+
+}
+h1{
+  padding:10px;
+  text-align: center;
+  font-size: 30px;
+  margin: 0 auto;
+  color: rgba(73, 92, 121, 1);
+  animation: grow2 1s ease;
+  z-index: 50;
+}
+
+.signUpVisible{
+  text-align: center;
+  height:400px;
+  width:300px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-color: #33b8ff;
+  border-width: 5px;
+  border-style: solid;
+  animation: grow 1s ease;
+
+
+
+
+}
+
+.signUp{
+  text-align: center;
+  height:1px;
+  width:1px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  margin: 0 auto;
+  border-radius: 20px;
+  border-color: #33b8ff;
+  border-width: 5px;
+  border-style: solid;
+
+
+}
+
+@keyframes grow {
+  0%{
+    height:1px;
+    width:1%;
+  }
+  50% {}
+  100% {
+    height:400px;
+  }
+}
+@keyframes grow2 {
+  0%{
+    font-size: 0px;
+  }
+  50% {}
+  100% {
+    font-size: 30px;
+  }
 }

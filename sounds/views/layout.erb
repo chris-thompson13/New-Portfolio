@@ -6,6 +6,18 @@
     <link rel="stylesheet" href="/stylesheets/index.css">
   </head>
   <body>
+    <nav>
+      <div class="left">
+        <a href="/"><button type="button" name="button">home</button></a>
+
+      </div>
+      <div class="right">
+        <a href="/sounds/views/content.erb"><button type="button" name="button">content</button></a>
+        <a href="/sounds/views/contact.erb"><button type="button" name="button">contact</button></a>
+      </div>
+
+
+    </nav>
 
     <%= yield %>
     <script src="/js/index.js"></script>
