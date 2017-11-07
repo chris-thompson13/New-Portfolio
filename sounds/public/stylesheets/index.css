@@ -3,9 +3,38 @@
 padding: 0;
 font-family: sans-serif;
   }
+
+.go{
+
+}
+ul{
+}
+.sub:hover{
+  color: #ff3363;
+  font-size: 15px;
+}
+.sub{
+  width:50%;
+  height: 30px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: #33b8ff;
+  font-weight: bold;
+  color: #33b8ff;
+  border-style: solid;
+  transition: color 1s;
+
+}
+.inp{
+    width: 80%;
+    height: 60px;
+    text-align: center;
+  }
 button:focus {outline:0;}
 .spacer{
   padding-top: 100px;
+  padding-bottom: 100px;
+
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -29,6 +58,7 @@ nav{
   vertical-align: middle;
   position: fixed;
   width: 100%;
+  z-index: 9999999;
 }
 button{
   z-index: 40;
@@ -68,20 +98,28 @@ h1{
   text-align: center;
   font-size: 30px;
   margin: 0 auto;
-  color: rgba(73, 92, 121, 1);
+  color: white;
   animation: grow2 1s ease;
   z-index: 50;
+
+}
+
+.content{
+  background-color: white;
+  display: block;
+  width: 100%;
+  height: 300px;
 }
 
 .signUpVisible{
   text-align: center;
   height:400px;
   width:300px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #33b8ff;
   position: relative;
   margin: 0 auto;
   border-radius: 20px;
-  border-color: #33b8ff;
+  border-color: white;
   border-width: 5px;
   border-style: solid;
   animation: grow 1s ease;
@@ -121,6 +159,20 @@ h1{
     font-size: 0px;
   }
   50% {}
+  100% {
+    font-size: 30px;
+  }
+}
+
+@keyframes blur {
+  0%{
+    font-size: 0px;
+  }
+  50% {
+    -webkit-filter: blur(1px);
+/* Safari */
+filter: blur(1px);
+  }
   100% {
     font-size: 30px;
   }
