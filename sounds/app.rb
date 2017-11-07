@@ -2,6 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sendgrid-ruby'
 include SendGrid
+require 'json'
 
 get '/' do
   erb :index
@@ -17,8 +18,9 @@ end
 
 post '/' do
 
-  require 'sendgrid-ruby'
+require 'sendgrid-ruby'
 include SendGrid
+require 'json'
 
 from = Email.new(email: 'test@example.com')
 to = Email.new(email: 'test@example.com')
