@@ -2,8 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader'
 require 'sendgrid-ruby'
 include SendGrid
-require 'json'
-require 'sendgrid-ruby'
+
 
 get '/' do
   erb :index
@@ -16,15 +15,9 @@ end
 get '/sounds/views/contact.erb' do
   erb :contact
 end
-
 post '/' do
-
-require 'sendgrid-ruby'
-include SendGrid
-require 'json'
-
-from = Email.new(email: 'test@example.com')
-to = Email.new(email: 'test@example.com')
+from = Email.new(email: params['email'])
+to = Email.new(email: 'chris@hianswering.com')
 subject = 'Sending with SendGrid is Fun'
 content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
 mail = Mail.new(from, subject, to, content)
