@@ -166,14 +166,17 @@ h1{
 
 @keyframes blur {
   0%{
-    font-size: 0px;
-  }
-  50% {
-    -webkit-filter: blur(1px);
+    -webkit-filter: blur(0px);
 /* Safari */
-filter: blur(1px);
+filter: blur(0px);  }
+  50% {
+    -webkit-filter: blur(3px);
+/* Safari */
+filter: blur(3px);
   }
   100% {
-    font-size: 30px;
+    -webkit-filter: blur(0px);
+/* Safari */
+filter: blur(0px);
   }
 }
