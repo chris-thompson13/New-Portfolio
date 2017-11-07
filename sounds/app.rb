@@ -3,6 +3,7 @@ require 'sinatra/reloader'
 require 'sendgrid-ruby'
 include SendGrid
 require 'json'
+require 'sendgrid-ruby'
 
 get '/' do
   erb :index
