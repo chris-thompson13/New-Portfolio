@@ -7,7 +7,22 @@ font-family: sans-serif;
 .go{
 
 }
+p{
+  border-color: grey;
+  border-style: solid;
+  border-radius: 3px;
+  margin:4px;
+  color:grey;
+  border-width: 4px;
+  vertical-align: middle;
+  font-size: 10px;
+  height: 70px;
+  background-color: white;
+  animation: grow3 1s ease;
+
+}
 ul{
+  height: 70px;
 }
 .sub:hover{
   color: #ff3363;
@@ -25,10 +40,19 @@ ul{
   transition: color 1s;
 
 }
+.top{
+  margin-top:30px;
+
+}
 .inp{
     width: 80%;
     height: 60px;
     text-align: center;
+    font-family: sans-serif;
+    font-size: 13px;
+    vertical-align: middle;
+    padding: 5px;
+    color: #33b8ff;
   }
 button:focus {outline:0;}
 .spacer{
@@ -51,9 +75,16 @@ background-size: cover;
 background-position: center center;
 background-repeat: no-repeat;
 }
+.medium{
+  height:100px;
+  width: 100px;
+  border-radius: 20px;
+  border-width: 7px;
+  border-color: white;
+}
 
 nav{
-  background-color: white;
+  background-color: rgba(255,255,255,.0);
   height: 60px;
   vertical-align: middle;
   position: fixed;
@@ -96,7 +127,7 @@ button{
 h1{
   padding:10px;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   margin: 0 auto;
   color: white;
   animation: grow2 1s ease;
@@ -160,7 +191,16 @@ h1{
   }
   50% {}
   100% {
-    font-size: 30px;
+    font-size: 20px;
+  }
+}
+@keyframes grow3 {
+  0%{
+    font-size: 0px;
+  }
+  50% {}
+  100% {
+    font-size: 10px;
   }
 }
 

@@ -16,10 +16,12 @@ get '/sounds/views/contact.erb' do
   erb :contact
 end
 post '/' do
+
+
 from = Email.new(email: params['email'])
 to = Email.new(email: 'chris@hianswering.com')
-subject = 'Sending with SendGrid is Fun'
-content = Content.new(type: 'text/plain', value: 'and easy to do anywhere, even with Ruby')
+subject = 'new message from portfolio'
+content = Content.new(type: 'text/plain', value: params['work'])
 mail = Mail.new(from, subject, to, content)
 
 sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
