@@ -23,3 +23,53 @@ $(document).ready(function () {
         return false;
     });
 });
+
+function loadJS(){
+  console.log("please")
+  if (toggleHide2.classList.contains('width2')){
+  toggleHide2.classList.remove('width2')
+  toggleHide2.classList.add('width')
+}
+if (toggleHide3.classList.contains('width2')){
+toggleHide3.classList.remove('width2')
+toggleHide3.classList.add('width')
+}
+if (toggleHide.classList.contains('width')){
+toggleHide.classList.remove('width')
+toggleHide.classList.add('width2')
+}
+
+}
+
+function loadJSMap(){
+  console.log("please")
+  if (toggleHide.classList.contains('width2')){
+  toggleHide.classList.remove('width2')
+  toggleHide.classList.add('width')
+}
+if (toggleHide3.classList.contains('width2')){
+toggleHide3.classList.remove('width2')
+toggleHide3.classList.add('width')
+}
+if (toggleHide2.classList.contains('width')){
+toggleHide2.classList.remove('width')
+toggleHide2.classList.add('width2')
+}
+
+}
+
+function loadJSMusic(){
+  if (toggleHide.classList.contains('width2')){
+  toggleHide.classList.remove('width2')
+  toggleHide.classList.add('width')
+}
+if (toggleHide2.classList.contains('width2')){
+toggleHide2.classList.remove('width2')
+toggleHide2.classList.add('width')
+}
+if (toggleHide3.classList.contains('width')){
+toggleHide3.classList.remove('width')
+toggleHide3.classList.add('width2')
+}
+
+}
