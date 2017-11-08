@@ -7,9 +7,10 @@ font-family: sans-serif;
 .go{
 
 }
+
 .full{
   width:100%;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255,255,255,.97);
 }
 .width{
   width: 80%;
@@ -32,13 +33,13 @@ p{
   color:grey;
   border-width: 4px;
   vertical-align: middle;
-  font-size: 10px;
+  font-size: 15px;
   background-color: white;
   animation: grow3 1s ease;
+  padding: 7px;
 
 }
 ul{
-  height: 70px;
 }
 .sub:hover{
   color: #ff3363;
@@ -62,14 +63,18 @@ ul{
 
 }
 .inp{
+
     width: 80%;
     height: 60px;
     text-align: center;
     font-family: sans-serif;
     font-size: 13px;
     vertical-align: middle;
+    margin-top: 20px;
     padding: 5px;
     color: #33b8ff;
+    border-radius: 10px;
+
   }
 button:focus {outline:0;}
 .spacer{
@@ -81,6 +86,14 @@ button:focus {outline:0;}
   margin: 0 auto;
   position: relative;
 
+}
+.ok {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding:20px;
 }
 button:hover{
   color: #ff3363;
@@ -113,10 +126,10 @@ button{
   z-index: 40;
   display: inline-block;
   top:20px;
+  padding: 10px;
   vertical-align: middle;
   background-color: white;
   width: auto;
-  height: 30px;
   background-color: white;
   border-radius: 10px;
   border-color: #33b8ff;
@@ -230,7 +243,7 @@ h1{
   }
   50% {}
   100% {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 

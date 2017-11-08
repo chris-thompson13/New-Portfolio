@@ -25,7 +25,6 @@ $(document).ready(function () {
 });
 
 function loadJS(){
-  console.log("please")
   if (toggleHide2.classList.contains('width2')){
   toggleHide2.classList.remove('width2')
   toggleHide2.classList.add('width')
@@ -42,7 +41,6 @@ toggleHide.classList.add('width2')
 }
 
 function loadJSMap(){
-  console.log("please")
   if (toggleHide.classList.contains('width2')){
   toggleHide.classList.remove('width2')
   toggleHide.classList.add('width')
